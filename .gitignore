@@ -1,0 +1,27 @@
+# Secrets and local config
+config/agent_config.yaml
+.env
+voice/voiceprint.json
+voice/models/
+
+# Databases
+*.db
+*.sqlite3
+
+# Generated output
+thumbnail-system/output/
+logs/*.log
+__pycache__/
+*.pyc
+
+# OS noise
+Thumbs.db
+.DS_Store
+
+# Agent/tooling metadata and local conversation transcripts
+.cloud-attachments/
+.freebuff/
+.pytest_cache/
+
+# Personal runtime state
+memory/*.jsonl

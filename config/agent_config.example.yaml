@@ -1,0 +1,19 @@
+# SURA — LLM configuration
+# Copy this file to agent_config.yaml and fill it in.
+# That file is gitignored; never commit real keys.
+#
+# Environment variables override this file:
+#   NVIDIA_API_KEY (build.nvidia.com — free credits, no card)
+#   GROQ_API_KEY   (console.groq.com — free tier, no card)
+#   GEMINI_API_KEY (aistudio.google.com — free tier)
+#   ANTHROPIC_API_KEY / OPENAI_API_KEY (paid)
+#   SUBHRA_AGENT_PROVIDER  (force a provider: nvidia|groq|google|ollama|anthropic|openai)
+#
+# All providers here are free to start. NVIDIA NIM is auto-detected first.
+
+provider: ""          # leave empty for auto-detect (NVIDIA -> Groq -> Gemini)
+model: ""             # empty = provider default
+api_key: ""           # or set the provider's env var
+# base_url: http://localhost:11434   # for ollama
+max_tokens: 2048
+temperature: 0.4

@@ -1,0 +1,17 @@
+# Face Reference Metadata
+
+# Example:
+#
+# - id: face_excited_01
+#   filename: excited/excited_01.jpg
+#   expression: excited
+#   angle: front
+#   lighting: studio
+#   crop: upper_body
+#   suitability:
+#     gaming: high
+#     livestream: high
+#     reaction: high
+#     dramatic: medium
+#
+# Add entries as photographs are added.

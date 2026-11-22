@@ -1,0 +1,12 @@
+# SURA voice layer — optional, free, fully offline (no API keys).
+# Install:  pip install -r requirements-voice.txt
+# The Whisper model downloads itself on first use (~145 MB, cached in
+# voice/models/whisper). For even better accented-speech accuracy:
+#   python -m cli set-stt-model small.en
+#
+# vosk is kept as a fallback STT for machines without faster-whisper.
+faster-whisper>=1.2     # offline STT (recommended, much better than vosk)
+vosk>=0.3.45            # fallback STT (~50 MB model)
+pyttsx3>=2.90           # offline TTS (SAPI5 on Windows)
+sounddevice>=0.4.6      # microphone capture
+numpy>=1.26             # required by sounddevice
